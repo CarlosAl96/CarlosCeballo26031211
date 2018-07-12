@@ -11,7 +11,5 @@ int main(int argc, char** argv) {
 	ob._cargar_intvec();
 	ob.decod();
 	
-	system("pause");
-	
 	return 0;
 }

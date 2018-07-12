@@ -53,7 +53,7 @@ void Principal::cargar_charvec(){
 	for(int i=0; i<tam+1; i++)
 		cout << charvec[i];
 		
-	cout << endl;
+	cout << endl << endl;
 }
 
 /*___________________________________________________________________________________________________________-*/
@@ -71,7 +71,7 @@ void Principal::cargar_intvec(){
 	if((tam2-y) != 0)
 		tam2 += 1;
 		
-	intvec = new int[tam2];
+	intvec = new unsigned int[tam2];
 	
 	if(!archivo.is_open())
 		archivo.open("_num.txt", ios::out);
@@ -130,7 +130,7 @@ void Principal::_cargar_intvec(){
 	
 	archivo.close();
 	
-	_intvec = new int[saltos+1];
+	_intvec = new unsigned int[saltos+1];
 	
 	if(!archivo.is_open())
 		archivo.open("_num.txt", ios::in);
@@ -161,11 +161,6 @@ void Principal::_cargar_intvec(){
 	}
 	
 	cout << endl;
-	
-	for(int i=0; i<saltos+1; i++){
-		
-		cout << _intvec[i] << "\n";
-	}
 	
 	archivo.close();
 }

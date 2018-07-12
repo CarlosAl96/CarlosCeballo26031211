@@ -11,8 +11,8 @@ class Principal{
 		
 		fstream archivo;
 		char *charvec;
-		int *intvec;
-		int *_intvec;
+		unsigned int *intvec;
+		unsigned int *_intvec;
 		int tam;
 		int tam2;
 		
