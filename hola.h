@@ -8,6 +8,7 @@ class hola{
 		char sexo;
 		int cedula;
 		string nombre;
+		float estatura;
 		
 	public:
 		hola(){}
